@@ -1,0 +1,15 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "AzureWebJobsSecretStorageType": "files",
+    "AzureWebJobs.sample_functions.Disabled": true,
+    "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
+
+    "FUNCTIONS_REQUEST_BODY_SIZE_LIMIT": 250000000
+  },
+    "Host": {
+    "CORS": "*"
+  }
+}
