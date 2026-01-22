@@ -76,7 +76,7 @@ jobs:
         uses: Azure/functions-action@v1
         id: deploy-to-function
         with:
-          app-name: 'Azu0120SyDvJpeFunc001'
+          app-name: 'Azu0121SyDvJpeFunc001'
           slot-name: 'Production'
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_10692DFEABAB46998D1F4A9E8297B113 }}
