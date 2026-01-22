@@ -29,6 +29,13 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
+      # ▼▼▼ 追加ここから ▼▼▼
+      - name: Configure Git for Private Modules
+        env:
+          TOKEN: ${{ secrets.PA_TOKEN }}
+        run: git config --global url."https://${TOKEN}@github.com/".insteadOf "https://github.com/"
+      # ▲▲▲ 追加ここまで ▲▲▲
+
       - name: Create and start virtual environment
         run: |
           python -m venv venv
